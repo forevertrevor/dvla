@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dvla_interview"
+version = "0.1.0"
+description = ""
+authors = ["forevertrevor <pg_smith2001@yahoo.co.uk>"]
+package-mode = false
+
+
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pydantic = "^2.14.1"
+xmltodict = "^1.0.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.1.1"
+black = "^26.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

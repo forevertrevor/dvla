@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- missing close bracket on <loans> tag! -->
+<loans
+  <loan id="L001">
+    <member_id>M001</member_id>
+    <member_name>Sarah Chen</member_name>
+    <branch>Central</branch>
+    <title>The Silent Tide</title>
+    <genre>Fiction</genre>
+    <loan_date>2026-04-02</loan_date>
+    <due_date>2026-04-23</due_date>
+    <returned_date>2026-04-20</returned_date>
+  </loan>
+  <loan id="L002">
+    <member_id>M002</member_id>
+    <member_name>Marcus Brown</member_name>
+    <branch>Central</branch>
+    <title>Foundations of Chemistry</title>
+    <genre>Science</genre>
+    <loan_date>2026-04-05</loan_date>
+    <due_date>2026-04-26</due_date>
+    <returned_date></returned_date>
+  </loan>
+  <loan id="L003">
+    <member_id>M003</member_id>
+    <member_name>Priya Patel</member_name>
+    <branch>Riverside</branch>
+    <title>A History of Maps</title>
+    <genre>History</genre>
+    <loan_date>2026-04-10</loan_date>
+    <due_date>2026-05-01</due_date>
+    <returned_date>2026-04-28</returned_date>
+  </loan>
+  <loan id="L004">
+    <member_id>M004</member_id>
+    <member_name>Tom Fletcher</member_name>
+    <branch>Riverside</branch>
+    <title>Gardening Through the Year</title>
+    <genre>Lifestyle</genre>
+    <loan_date>2026-04-11</loan_date>
+    <due_date>2026-05-02</due_date>
+    <returned_date></returned_date>
+  </loan>
+  <loan id="L005">
+    <member_id>M005</member_id>
+    <member_name>Aisha Khan</member_name>
+    <branch>Central</branch>
+    <title>The Silent Tide</title>
+    <genre>Fiction</genre>
+    <loan_date>2026-04-15</loan_date>
+    <due_date>2026-05-06</due_date>
+    <returned_date>2026-05-03</returned_date>
+  </loan>
+  <loan id="L006">
+    <member_id>M006</member_id>
+    <member_name>David Owen</member_name>
+    <branch>Hillside</branch>
+    <title>Quantum Mechanics Explained</title>
+    <genre>Science</genre>
+    <loan_date>2026-04-18</loan_date>
+    <due_date>2026-05-09</due_date>
+    <returned_date></returned_date>
+  </loan>
+  <loan id="L007">
+    <member_id>M007</member_id>
+    <member_name>Grace Lewis</member_name>
+    <branch>Riverside</branch>
+    <title>The Last Lighthouse</title>
+    <genre>Fiction</genre>
+    <loan_date>2026-04-20</loan_date>
+    <due_date>2026-05-11</due_date>
+    <returned_date>2026-04-29</returned_date>
+  </loan>
+  <loan id="L008">
+    <member_id>M008</member_id>
+    <member_name>James Reed</member_name>
+    <branch>Central</branch>
+    <title>Cooking for One</title>
+    <genre>Lifestyle</genre>
+    <loan_date>2026-04-22</loan_date>
+    <due_date>2026-05-13</due_date>
+    <returned_date></returned_date>
+  </loan>
+  <loan id="L009">
+    <member_id>M009</member_id>
+    <member_name>Hannah Scott</member_name>
+    <branch>Hillside</branch>
+    <title>A History of Maps</title>
+    <genre>History</genre>
+    <loan_date>2026-04-25</loan_date>
+    <due_date>2026-05-16</due_date>
+    <returned_date>2026-05-14</returned_date>
+  </loan>
+  <loan id="L010">
+    <member_id>M010</member_id>
+    <member_name>Oliver Price</member_name>
+    <branch>Central</branch>
+    <title>The Silent Tide</title>
+    <genre>Fiction</genre>
+    <loan_date>2026-05-01</loan_date>
+    <due_date>2026-05-22</due_date>
+    <returned_date></returned_date>
+  </loan>
+  <loan id="L011">
+    <member_id>M011</member_id>
+    <member_name>Megan Hughes</member_name>
+    <branch>Riverside</branch>
+    <title>Foundations of Chemistry</title>
+    <genre>Science</genre>
+    <loan_date>2026-05-02</loan_date>
+    <due_date>2026-05-23</due_date>
+    <returned_date>2026-05-18</returned_date>
+  </loan>
+  <loan id="L012">
+    <member_id>M012</member_id>
+    <member_name>Daniel Evans</member_name>
+    <branch>Hillside</branch>
+    <title>The Last Lighthouse</title>
+    <genre>Fiction</genre>
+    <loan_date>2026-05-03</loan_date>
+    <due_date>2026-05-24</due_date>
+    <returned_date></returned_date>
+  </loan>
+  <loan id="L013">
+    <member_id>M013</member_id>
+    <member_name>Sophie Turner</member_name>
+    <branch>Central</branch>
+    <title>Mindful Mornings</title>
+    <genre>Lifestyle</genre>
+    <loan_date>2026-05-04</loan_date>
+    <due_date>2026-05-25</due_date>
+    <returned_date>2026-05-05</returned_date>
+  </loan>
+  <loan id="L014">
+    <member_id>M014</member_id>
+    <member_name>Ryan Walsh</member_name>
+    <branch>Riverside</branch>
+    <title>A History of Maps</title>
+    <genre>History</genre>
+    <loan_date>2026-05-05</loan_date>
+    <due_date>2026-05-26</due_date>
+    <returned_date></returned_date>
+  </loan>
+  <loan id="L015">
+    <member_id>M015</member_id>
+    <member_name>Chloe Baker</member_name>
+    <branch>Hillside</branch>
+    <title>Quantum Mechanics Explained</title>
+    <genre>Science</genre>
+    <loan_date>2026-05-06</loan_date>
+    <due_date>2026-05-27</due_date>
+    <returned_date>2026-05-26</returned_date>
+  </loan>
+  <loan id="L016">
+    <member_id>M016</member_id>
+    <member_name>Nathan Clark</member_name>
+    <branch>Central</branch>
+    <title>The Silent Tide</title>
+    <genre>Fiction</genre>
+    <loan_date>2026-05-07</loan_date>
+    <due_date>2026-05-28</due_date>
+    <returned_date></returned_date>
+  </loan>
+  <loan id="L017">
+    <member_id>M017</member_id>
+    <member_name>Ella Morgan</member_name>
+    <branch>Riverside</branch>
+    <title>Cooking for One</title>
+    <genre>Lifestyle</genre>
+    <loan_date>2026-05-08</loan_date>
+    <due_date>2026-05-29</due_date>
+    <returned_date>2026-05-20</returned_date>
+  </loan>
+  <loan id="L018">
+    <member_id>M018</member_id>
+    <member_name>Liam Davies</member_name>
+    <branch>Hillside</branch>
+    <title>The Last Lighthouse</title>
+    <genre>Fiction</genre>
+    <loan_date>2026-05-09</loan_date>
+    <due_date>2026-05-30</due_date>
+    <returned_date></returned_date>
+  </loan>
+  <loan id="L019">
+    <member_id>M019</member_id>
+    <member_name>Zoe Mitchell</member_name>
+    <branch>Central</branch>
+    <title>Foundations of Chemistry</title>
+    <genre>Science</genre>
+    <loan_date>2026-05-10</loan_date>
+    <due_date>2026-05-31</due_date>
+    <returned_date>2026-05-28</returned_date>
+  </loan>
+  <loan id="L020">
+    <member_id>M020</member_id>
+    <member_name>Adam Foster</member_name>
+    <branch>Riverside</branch>
+    <title>A History of Maps</title>
+    <genre>History</genre>
+    <loan_date>2026-05-11</loan_date>
+    <due_date>2026-06-01</due_date>
+    <returned_date></returned_date>
+  </loan>
+</loans>
