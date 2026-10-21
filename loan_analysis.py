@@ -20,8 +20,8 @@ def is_out_on_loan(loan: model.Loan, date_to_analyse: date):
 
 def read_data_from_file(_path_to_data_file: Path) -> Any | None:
     try:
-        with open(_path_to_data_file) as f:
-            xml = f.read()
+        with open(_path_to_data_file) as file:
+            xml = file.read()
         xml_data_as_dict = xmltodict.parse(xml, attr_prefix="")
         return xml_data_as_dict["loans"]["loan"]
     except OSError:
@@ -37,22 +37,12 @@ def read_data_from_file(_path_to_data_file: Path) -> Any | None:
         raise
 
 
-class LoanAnalyzer:
+class DataLoader:
 
     def __init__(self, path_to_data_file: Path = PATH_TO_DATA_FILE):
-        """
-        Construction of the LoanAnalyzer loads and validates the XML file.
-        :param path_to_data_file: valid path at which the XML is located.
-        """
         self._path_to_data_file = path_to_data_file
-        self._all_loans = self.load_xml_to_model()
 
-    @property
-    def all_loans(self):
-        return self._all_loans
-
-    def load_xml_to_model(self) -> List[model.Loan]:
-
+    def load_data(self) -> List[model.Loan]:
         loans_as_dict = read_data_from_file(self._path_to_data_file)
 
         result = []
@@ -62,11 +52,20 @@ class LoanAnalyzer:
                 result.append(model.Loan.model_validate(item))
             except ValidationError as validation_error:
                 logging.warn(
-                    f"There was a validation error at record {idx+1}/{len(loans_as_dict)}: {validation_error}"
+                    f"There was a validation error at record {idx + 1}/{len(loans_as_dict)}: {validation_error}"
                 )
-                # logging.warn(validation_error)
         logging.info(f"Successfully loaded {len(result)} records.")
         return result
+
+
+class LoanAnalyzer:
+
+    def __init__(self, loan_data: List[model.Loan]):
+        self._all_loans = loan_data
+
+    @property
+    def all_loans(self):
+        return self._all_loans
 
     def get_books_out_on_loan_for_date(self, date_to_analyse: date) -> List[model.Loan]:
         return [

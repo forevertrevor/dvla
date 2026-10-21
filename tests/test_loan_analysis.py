@@ -1,14 +1,15 @@
 from datetime import date
 
 
-from loan_analysis import LoanAnalyzer
+from loan_analysis import LoanAnalyzer, DataLoader
 
 
 def test_loans_on_specific_date():
 
     # GIVEN
+    data = DataLoader().load_data()
     date_to_analyse = date(2026, 4, 21)
-    loan_analyzer = LoanAnalyzer()
+    loan_analyzer = LoanAnalyzer(data)
 
     # WHEN
     results = loan_analyzer.get_books_out_on_loan_for_date(date_to_analyse)
@@ -25,7 +26,8 @@ def test_loans_on_specific_date():
 def test_loans_that_are_overdue():
 
     # GIVEN
-    loan_analyzer = LoanAnalyzer()
+    data = DataLoader().load_data()
+    loan_analyzer = LoanAnalyzer(data)
 
     # WHEN
     results = loan_analyzer.get_overdue_books()
@@ -36,7 +38,8 @@ def test_loans_that_are_overdue():
 
 def test_group_loan_count_by_branch():
     # GIVEN
-    loan_analyzer = LoanAnalyzer()
+    data = DataLoader().load_data()
+    loan_analyzer = LoanAnalyzer(data)
 
     # WHEN
     results = loan_analyzer.group_loans_by_branch()
