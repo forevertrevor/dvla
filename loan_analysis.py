@@ -40,6 +40,10 @@ def read_data_from_file(_path_to_data_file: Path) -> Any | None:
 class DataLoader:
 
     def __init__(self, path_to_data_file: Path = PATH_TO_DATA_FILE):
+        """
+        Provide the path to the xml data file
+        :param path_to_data_file: default is path to coding-part1.xml
+        """
         self._path_to_data_file = path_to_data_file
 
     def load_data(self) -> List[model.Loan]:

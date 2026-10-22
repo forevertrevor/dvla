@@ -10,7 +10,7 @@ class Loan(BaseModel):
     branch: str
     title: str
     genre: str
-    # date type is automatically validated for iso form in pydantic
+    # date type is automatically validated for iso format in pydantic
     loan_date: date
     due_date: date
     returned_date: date | None
