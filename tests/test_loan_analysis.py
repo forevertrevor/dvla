@@ -43,13 +43,8 @@ def test_group_loan_count_by_branch():
 
     # WHEN
     results = loan_analyzer.group_loans_by_branch()
-    results_alternative_approach = (
-        loan_analyzer.group_loans_by_branch_alternative_approach()
-    )
 
     # THEN
     assert results["Central"] == 8
     assert results["Riverside"] == 7
     assert results["Hillside"] == 5
-
-    assert results_alternative_approach == results

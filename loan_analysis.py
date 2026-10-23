@@ -88,15 +88,6 @@ class LoanAnalyzer:
                 result[loan.branch] = 1
         return result
 
-    def group_loans_by_branch_alternative_approach(
-        self,
-    ) -> Dict[str, int]:
-        result: Dict[str, int] = {}
-        sorted_loans = sorted(self._all_loans, key=lambda loan: loan.branch)
-        for k, g in itertools.groupby(sorted_loans, lambda loan: loan.branch):
-            result[k] = len(list(g))
-        return result
-
     def report_books_on_loan_for_date(self, date_to_analyse: date):
         loans = self.get_books_out_on_loan_for_date(date_to_analyse)
         for loan in loans:
